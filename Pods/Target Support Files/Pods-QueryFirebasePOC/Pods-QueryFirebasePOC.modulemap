@@ -1,0 +1,6 @@
+framework module Pods_QueryFirebasePOC {
+  umbrella header "Pods-QueryFirebasePOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
