@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func filterLocations(_ sender: Any) {
         
         if !filtered{
-            
+            filterButton.tintColor = UIColor.red
             let fromLatitude = Double.random(in: -90 ..< 0)
             let fromLongitude = Double.random(in: -180 ..< 0)
             let toLatitude = Double.random(in: 0 ..< 90)
@@ -97,6 +97,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
         else{
+            filterButton.tintColor = UIColor.blue
             loadAllLocations()
         }
         
